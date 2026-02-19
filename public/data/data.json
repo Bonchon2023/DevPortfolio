@@ -45,7 +45,31 @@
   ],
   "link": "https://skill-frame-x-git-hub-io.vercel.app",
   "github": "https://github.com/Bonchon2023/SkillFrameX.gitHub.io"
-    }
+    },
+      {
+        "id": "3",
+        "name": "DevPortfolio - Personal Developer Portfolio",
+        "description": "A modern, highly responsive personal developer portfolio built to showcase professional projects, skills, and experience. Engineered with the latest web technologies including Next.js 16, React 19, and Tailwind CSS v4, offering a seamless user experience, optimal performance, and clean UI design.",
+        "features": [
+          "Modern Tech Stack: Developed using Next.js 16 (App Router) and React 19, ensuring high performance, excellent SEO, and a scalable component-based architecture.",
+          "Responsive UI/UX & Styling: Crafted a sleek, mobile-first interface utilizing Tailwind CSS v4 alongside `tailwind-merge` and `clsx` for dynamic and maintainable utility class management.",
+          "Accessible Components & Iconography: Integrated `@radix-ui/react-slot` for building highly accessible, customizable UI components, paired with `lucide-react` for consistent and lightweight SVG icons.",
+          "Data-Driven Rendering: Engineered a dynamic content rendering system that fetches project details, skills, and galleries from a local JSON structure, allowing for effortless portfolio updates.",
+          "Type Safety & Optimization: Fully typed with TypeScript to ensure code reliability and maintainability, while utilizing `next/font` for automatic font optimization (Geist font family)."
+        ],
+        "role": "Frontend Developer",
+        "year": "Feb 2026",
+        "cover": "my-portfolio/data/image/devport/devport1.webp",
+        "tag": ["Next.js","React","TypeScript","Tailwind CSS"],
+        "image": [
+          "my-portfolio/data/image/devport/devport1.webp",
+          "my-portfolio/data/image/devport/devport2.webp",
+          "my-portfolio/data/image/devport/devport3.webp",
+          "my-portfolio/data/image/devport/devport4.webp"
+        ],
+        "link": "https://dev-portfolio-smoky-ten.vercel.app/",
+        "github": "https://github.com/Bonchon2023/DevPortfolio"
+      }
   ]
 }
 
