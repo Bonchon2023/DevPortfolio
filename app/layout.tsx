@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "My Portfolio",
   description: "A modern portfolio website showcasing my work.",
   icons: {
-    icon: "/data/tab-icon.svg",
+    icon: "icon.svg",
   },
 };
 
