@@ -11,6 +11,8 @@
         "Responsive Design: Utilized CSS Grid and Flexbox with a mobile-first approach, ensuring seamless rendering across desktop, tablet, and mobile devices.",
         "Performance OptimizationModern CSS: Implemented CSS Variables (:root) for consistent theming and maintainability."
       ],
+      "role": "Frontend Developer",
+      "year": "Oct 2025 - Dec 2025",
       "cover": "my-portfolio/data/image/salty/salty1.webp",
       "tag": ["HTML", "CSS", "JavaScript"],
       "image":[
@@ -32,6 +34,8 @@
     "Responsive Navigation: Designed a sticky navigation bar with a glassmorphism effect, featuring a real-time search input and a mobile-responsive menu that adapts to different screen sizes.",
     "Asynchronous Data Loading: Utilized `Promise.all` to fetch course and category data concurrently, optimizing the initial page load performance."
   ],
+  "role": "Frontend Developer",
+  "year": "Jan 2026 - Feb 2026",
   "cover": "my-portfolio/data/image/skillframex/skillframex1.webp",
   "tag": ["Next.js", "TypeScript", "Tailwind CSS", "React"],
   "image": [
