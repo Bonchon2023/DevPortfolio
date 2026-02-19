@@ -1,0 +1,47 @@
+{
+  "project": [
+    {
+      "id": "1",
+      "name": "SALTY - E-commerce Website",
+      "description": "My 1st project is an e-commerce website called SALTY, Designed and developed a fully responsive e-commerce frontend website using pure HTML, CSS, and Vanilla JavaScript. The project simulates a complete online shopping experience without relying on external frontend frameworks.",
+      "features": [
+        "Dynamic Product Rendering: Implemented a custom routing system using URL parameters (URLSearchParams) to handle product search, category filtering, and detailed product views dynamically from a JSON data structure.",
+        "State Management: Developed a persistent Shopping Cart system using the browser's localStorage to handle adding/removing items and updating quantities across different sessions.",
+        "Interactive UI/UX: Built a custom JavaScript Carousel class, simulated payment processing modals, and added micro-interactions (e.g., \"flying to cart\" animation) to enhance user engagement.",
+        "Responsive Design: Utilized CSS Grid and Flexbox with a mobile-first approach, ensuring seamless rendering across desktop, tablet, and mobile devices.",
+        "Performance OptimizationModern CSS: Implemented CSS Variables (:root) for consistent theming and maintainability."
+      ],
+      "cover": "my-portfolio/data/image/salty/salty1.webp",
+      "tag": ["HTML", "CSS", "JavaScript"],
+      "image":[
+        "my-portfolio/data/image/salty/salty1.webp",
+        "my-portfolio/data/image/salty/salty2.webp",
+        "my-portfolio/data/image/salty/salty3.webp",
+        "my-portfolio/data/image/salty/salty4.webp"],
+      "link": "https://bonchon2023.github.io/",
+      "github": "https://github.com/Bonchon2023/Bonchon2023.gitHub.io"
+    },
+    {
+      "id": "2",
+      "name": "SkillFrameX - Online Learning Platform",
+      "description": "SkillFrameX is a modern online learning platform developed with Next.js (App Router) and TypeScript. The project focuses on providing a seamless user experience for browsing courses, reading blogs, and tracking learning progress. It features a responsive design and efficient state management to handle dynamic content.",
+       "features": [
+    "Dynamic Course Filtering & Search: Implemented a robust filtering system using `useSearchParams` to handle search queries and category selection, allowing users to filter courses by name, description, or category with shareable URLs.",
+    "Interactive Hero Slider: Built a custom carousel component with auto-sliding capabilities, manual navigation controls, and smooth CSS transitions to highlight featured courses.",
+    "Learning Progress Tracking: Integrated a custom hook (`useProgress`) to manage user enrollments and calculate real-time course completion percentages based on finished lessons.",
+    "Responsive Navigation: Designed a sticky navigation bar with a glassmorphism effect, featuring a real-time search input and a mobile-responsive menu that adapts to different screen sizes.",
+    "Asynchronous Data Loading: Utilized `Promise.all` to fetch course and category data concurrently, optimizing the initial page load performance."
+  ],
+  "cover": "my-portfolio/data/image/skillframex/skillframex1.webp",
+  "tag": ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+  "image": [
+    "my-portfolio/data/image/skillframex/skillframex1.webp",
+    "my-portfolio/data/image/skillframex/skillframex2.webp",
+    "my-portfolio/data/image/skillframex/skillframex3.webp"
+  ],
+  "link": "https://skill-frame-x-git-hub-io.vercel.app",
+  "github": "https://github.com/Bonchon2023/SkillFrameX.gitHub.io"
+    }
+  ]
+}
+

@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
+  /* ลงทะเบียนตัวแปรสีเพื่อให้ Tailwind สร้าง Class ให้ใช้งานได้ */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --radius: 0.6rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --- ค่าสีจาก Realtime Colors --- */
+    --text: #0e1608;       /* สีดำอมเขียว (Text) */
+    --bg-base: #f7faf4;    /* สีขาวอมเขียว (Background) */
+    --main: #85bb54;       /* สีเขียวใบไม้ (Primary) */
+    --sec: #92d3cc;        /* สีฟ้าอมเขียว (Secondary) */
+    --high: #71a6c6;       /* สีฟ้า (Accent) */
+
+    /* --- Mapping เข้ากับระบบ UI --- */
+    --background: var(--bg-base);
+    --foreground: var(--text);
+
+    --primary: var(--main);
+    --primary-foreground: #ffffff; /* สีขาวบนพื้นเขียวจะอ่านง่าย */
+
+    --secondary: var(--sec);
+    --secondary-foreground: #0e1608;
+
+    --accent: var(--high);
+    --accent-foreground: #ffffff;
+
+    --muted: #e6f0e3; /* ปรับจางจากสีพื้นหลัง */
+    --muted-foreground: #5a7a55; /* สีเทาเขียวสำหรับข้อความรอง */
+
+    --card: #ffffff;
+    --card-foreground: var(--text);
+
+    --popover: #ffffff;
+    --popover-foreground: var(--text);
+
+    --border: var(--sec); /* ใช้สี Secondary เป็นเส้นขอบ */
+    --input: var(--sec);
+    --ring: var(--main);
+
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+  }
+
+  /* Dark Mode (เผื่อไว้) */
+  :root[data-theme="dark"], .dark {
+    --background: #050a04;
+    --foreground: #f1f7f0;
+    
+    --primary: #76ab44;
+    --primary-foreground: #ffffff;
+    
+    --secondary: #2c6d66;
+    --secondary-foreground: #f1f7f0;
+    
+    --accent: #396d8e;
+    --accent-foreground: #ffffff;
+    
+    --muted: #152014;
+    --muted-foreground: #8aa386;
+    
+    --card: #0a1208;
+    --card-foreground: #f1f7f0;
+    
+    --border: #2c6d66;
+    --input: #2c6d66;
+    --ring: #76ab44;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Global Styles */
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Google Sans', 'Prompt', sans-serif; /* ตามที่ Realtime Colors แนะนำ */
+  }
+  
+  /* แก้ปัญหา border-border ที่ error */
+  * {
+    border-color: var(--border);
+  }
 }
