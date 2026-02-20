@@ -215,7 +215,7 @@ export default function Home() {
                 </div>
                 <div className="pt-6 border-t border-border">
                   <Button className="gap-2 bg-primary text-white hover:bg-primary/90" asChild>
-                    <a href="public/data/Reume_Narongrit Sornjai.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/data/Resume_Narongrit Sornjai.pdf" target="_blank" rel="noopener noreferrer">
                       <FileText size={18} /> Download Resume
                     </a>
                   </Button>
