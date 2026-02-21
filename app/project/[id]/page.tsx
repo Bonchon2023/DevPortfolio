@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Github, ExternalLink, CheckCircle2, Calendar, User } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
-import { ProjectCarousel } from "@/app/components/ProjectCarousel"; // <-- Import Component ใหม่
+import { ProjectCarousel } from "@/app/components/ProjectCarousel";
 import data from "@/public/data/data.json";
 
 interface ProjectPageProps {
@@ -11,21 +11,35 @@ interface ProjectPageProps {
 }
 
 export function generateStaticParams() {
-  return data.project.map((p) => ({
-    id: String(p.id),
-  }));
+  const projects = data.project.map((p) => ({ id: String(p.id) }));
+  const miniprojects = data.miniproject.map((p) => ({ id: String(p.id) }));
+  return [...projects, ...miniprojects];
 }
 
 export default async function ProjectDetail({ params }: ProjectPageProps) {
   const resolvedParams = await params;
   const projectId = resolvedParams.id;
 
-  const project = data.project.find((p) => String(p.id) === String(projectId));
+  //ฟังก์ชันตรวจสอบและดึงข้อมูลว่าเป็น Project หรือ Mini Project 
+  const getProjectData = (id: string) => {
+    // หา Project หลักก่อน
+    const foundInProject = data.project.find((p) => String(p.id) === String(id));
+    if (foundInProject) return foundInProject;
 
+    //ถ้าไม่เจอ ให้ค้นหาใน Mini Project
+    const foundInMiniProject = data.miniproject.find((p) => String(p.id) === String(id));
+    if (foundInMiniProject) return foundInMiniProject;
+
+    //ถ้าไม่เจอเลยในทั้ง 2 ที่ คืนค่า null
+    return null;
+  };
+
+  const project = getProjectData(projectId);
+
+  // 404
   if (!project) {
     notFound();
   }
-
 
   let carouselImages: string[] = [];
   if (project.image && project.image.length > 0) {
@@ -44,7 +58,6 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
 
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground">
-
       <main className="flex-1">
         <section className="pt-24 pb-12 bg-secondary/5 border-b border-border">
           <div className="container mx-auto px-4 max-w-6xl">
@@ -57,6 +70,13 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
+                {/* แสดง Badge ว่าเป็น Project หรือ Mini Project*/}
+                <div className="mb-4">
+                  <span className="px-3 py-1 bg-secondary text-secondary-foreground border border-border rounded-full text-xs font-semibold uppercase tracking-wider">
+                    {projectId.startsWith('M') ? 'Mini Project' : 'Main Project'}
+                  </span>
+                </div>
+
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-foreground">
                   {project.name}
                 </h1>
@@ -188,7 +208,6 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
           </div>
         </section>
       </main>
-
     </div>
   );
 }
