@@ -41,7 +41,10 @@
   "image": [
     "my-portfolio/data/image/skillframex/skillframex1.webp",
     "my-portfolio/data/image/skillframex/skillframex2.webp",
-    "my-portfolio/data/image/skillframex/skillframex3.webp"
+    "my-portfolio/data/image/skillframex/skillframex3.webp",
+    "my-portfolio/data/image/skillframex/skillframex4.webp",
+    "my-portfolio/data/image/skillframex/skillframex5.webp",
+    "my-portfolio/data/image/skillframex/skillframex6.webp"
   ],
   "link": "https://skill-frame-x-git-hub-io.vercel.app",
   "github": "https://github.com/Bonchon2023/SkillFrameX.gitHub.io"
