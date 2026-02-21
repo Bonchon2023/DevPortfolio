@@ -1,7 +1,10 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Linkedin, Github, Mail, FileText, Code2, Wrench, GraduationCap, Smartphone } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
+import { BiCodeBlock } from "react-icons/bi";
+import { SiFramework } from "react-icons/si";
 import { ProjectCard } from "@/app/components/ProjectCard";
 import data from "@/public/data/data.json";
 
@@ -16,8 +19,9 @@ export default function Home() {
         <section className="pt-32 pb-16 bg-secondary/5 border-b border-border">
           <div className="container mx-auto px-4 max-w-6xl text-center md:text-left">
             <div className="max-w-3xl mx-auto md:mx-0">
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-foreground">
-                Hello, I am a <span className="bg-linear-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text ">Frontend Developer</span>
+              <h1 className=" text-4xl md:text-6xl font-bold tracking-tight mb-6 text-foreground">
+                Hello, I am a <span className="bg-linear-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text ">Frontend Developer</span> & 
+                <span className="pb-1.5 bg-linear-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text "> Geologist</span>
               </h1>
               
               <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
@@ -60,10 +64,24 @@ export default function Home() {
             <div className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-6">
                 <Code2 className="text-primary" size={28} />
-                <h3 className="text-2xl font-semibold">Languages</h3>
+                <h3 className="text-2xl font-semibold">Programming Languages</h3>
               </div>
               <div className="flex flex-wrap gap-3">
-                {["HTML", "CSS", "JavaScript", "TypeScript", "SQL"].map((skill) => (
+                {["JavaScript", "TypeScript", "Python", "SQL"].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-secondary/10 text-secondary-foreground border border-secondary/20 rounded-lg font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+          <div className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3 mb-6">
+                <BiCodeBlock className="text-primary" size={28} />
+                <h3 className="text-2xl font-semibold">Mockup Languages</h3>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {["HTML", "CSS", "Tailwind CSS"].map((skill) => (
                   <span key={skill} className="px-4 py-2 bg-secondary/10 text-secondary-foreground border border-secondary/20 rounded-lg font-medium">
                     {skill}
                   </span>
@@ -75,10 +93,24 @@ export default function Home() {
             <div className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-6">
                 <Wrench className="text-primary" size={28} />
-                <h3 className="text-2xl font-semibold">Tools & Frameworks</h3>
+                <h3 className="text-2xl font-semibold">Tools</h3>
               </div>
               <div className="flex flex-wrap gap-3">
-                {["React", "Next.js", "Tailwind CSS", "Node.js", "Git", "GitHub"].map((skill) => (
+                {["Git", "GitHub", "VS Code", "Figma", "MySql"].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-secondary/10 text-secondary-foreground border border-secondary/20 rounded-lg font-medium">
+                    {skill}
+                  </span>
+                ))} 
+              </div>
+            </div>
+
+            <div className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3 mb-6">
+                <SiFramework className="text-primary" size={28} />
+                <h3 className="text-2xl font-semibold">Frameworks</h3>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {["React", "Vite", "Node.js","Vue.js","Next.js" ].map((skill) => (
                   <span key={skill} className="px-4 py-2 bg-secondary/10 text-secondary-foreground border border-secondary/20 rounded-lg font-medium">
                     {skill}
                   </span>
@@ -160,7 +192,7 @@ export default function Home() {
               {/* Profile Image */}
               <div className="relative w-full aspect-4/5 rounded-2xl overflow-hidden shadow-2xl border border-border">
                 <Image 
-                  src="/data/image/proflie/profile1.webp" /* ปรับ path รูปภาพได้ตามต้องการ */
+                  src="/data/image/proflie/profile1.webp"
                   alt="Narongrit Sornjai"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -210,7 +242,7 @@ export default function Home() {
                   </div>
                 </div>
 
-<div className="flex items-center gap-3">
+                <div className="flex items-center gap-3">
                     <a 
                       href="https://www.facebook.com/nar.ngrit.s.njai.cr" 
                       target="_blank" 
@@ -241,7 +273,7 @@ export default function Home() {
                 </div>
                 <div className="pt-6 border-t border-border">
                   <Button className="gap-2 bg-primary text-white hover:bg-primary/90" asChild>
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/data/Resume_Narongrit_Sornjai.pdf" target="_blank" rel="noopener noreferrer" download="Resume_Narongrit_Sornjai.pdf">
                       <FileText size={18} /> Download Resume
                     </a>
                   </Button>

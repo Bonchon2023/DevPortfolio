@@ -14,8 +14,8 @@ export function ProjectCarousel({ images, projectName }: ProjectCarouselProps) {
 
   if (!images || images.length === 0) {
     return (
-      <div className="w-full aspect-4/3 bg-secondary/10 rounded-2xl flex items-center justify-center border border-border">
-        <span className="text-muted-foreground">ไม่มีรูปภาพ</span>
+      <div className="w-full aspect-video bg-secondary/10 rounded-2xl flex items-center justify-center border border-border">
+        <span className="text-muted-foreground">No images available</span>
       </div>
     );
   }
@@ -29,13 +29,13 @@ export function ProjectCarousel({ images, projectName }: ProjectCarouselProps) {
   };
 
   return (
-    <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-border group bg-card">
+    <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border group bg-card">
       <Image
         src={images[currentIndex]}
         alt={`${projectName} preview ${currentIndex + 1}`}
         fill
         className="object-cover transition-all duration-500"
-        priority={currentIndex === 0} // โหลดรูปแรกก่อนเสมอ
+        priority={currentIndex === 0} 
       />
       
       {/* จะแสดงปุ่มเลื่อนก็ต่อเมื่อมีรูปมากกว่า 1 รูป */}
