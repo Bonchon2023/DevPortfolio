@@ -49,7 +49,7 @@ export default function Home() {
         {/* =========================================
             Skills Section
             ========================================= */}
-        <section className="py-20 container mx-auto px-4 max-w-6xl">
+        <section className="py-20 container mx-auto px-4 max-w-6xl border-b border-border">
           <h2 className="text-3xl font-bold mb-10 text-foreground flex items-center gap-3">
             <span className="w-10 h-1.5 bg-primary rounded-full"></span>
             Technical Skills
@@ -63,7 +63,6 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold">Languages</h3>
               </div>
               <div className="flex flex-wrap gap-3">
-                {/* เปลี่ยนหรือเพิ่มภาษาที่คุณใช้งานได้ที่นี่ */}
                 {["HTML", "CSS", "JavaScript", "TypeScript", "SQL"].map((skill) => (
                   <span key={skill} className="px-4 py-2 bg-secondary/10 text-secondary-foreground border border-secondary/20 rounded-lg font-medium">
                     {skill}
@@ -79,7 +78,6 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold">Tools & Frameworks</h3>
               </div>
               <div className="flex flex-wrap gap-3">
-                {/* เปลี่ยนหรือเพิ่ม Tool ที่คุณใช้งานได้ที่นี่ */}
                 {["React", "Next.js", "Tailwind CSS", "Node.js", "Git", "GitHub"].map((skill) => (
                   <span key={skill} className="px-4 py-2 bg-secondary/10 text-secondary-foreground border border-secondary/20 rounded-lg font-medium">
                     {skill}
@@ -92,10 +90,10 @@ export default function Home() {
         {/* =========================================
             Projects Section
             ========================================= */}
-        <section id="projects" className="py-20 container mx-auto px-4 max-w-6xl">
+        <section id="projects" className="py-20 container mx-auto px-4 max-w-6xl border-b border-border" >
           <h2 className="text-3xl font-bold mb-10 text-foreground flex items-center gap-3">
             <span className="w-10 h-1.5 bg-primary rounded-full"></span>
-            Recent Projects
+            Projects
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -113,6 +111,34 @@ export default function Home() {
                   tags={proj.tag}
                   demoUrl={proj.link}
                   repoUrl={proj.github}
+                  image={imagePath}
+                />
+              );
+            })}
+          </div>
+        </section>
+
+        <section id="projects" className="py-20 container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl font-bold mb-10 text-foreground flex items-center gap-3">
+            <span className="w-10 h-1.5 bg-primary rounded-full"></span>
+            Mini Projects
+          </h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {data.miniproject.map((miniProj) => {
+              const imagePath = miniProj.cover 
+                ? (miniProj.cover.startsWith('/') ? miniProj.cover : `/${miniProj.cover.replace('my-portfolio/', '')}`)
+                : '/placeholder.jpg';
+
+              return (
+                <ProjectCard 
+                  key={miniProj.id}
+                  id={miniProj.id}
+                  title={miniProj.name}
+                  description={miniProj.description}
+                  tags={miniProj.tag}
+                  demoUrl={miniProj.link}
+                  repoUrl={miniProj.github}
                   image={imagePath}
                 />
               );

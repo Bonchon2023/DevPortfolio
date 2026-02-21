@@ -1,7 +1,7 @@
 {
   "project": [
     {
-      "id": "1",
+      "id": "P01",
       "name": "SALTY - E-commerce Website",
       "description": "My 1st project is an e-commerce website called SALTY, Designed and developed a fully responsive e-commerce frontend website using pure HTML, CSS, and Vanilla JavaScript. The project simulates a complete online shopping experience without relying on external frontend frameworks.",
       "features": [
@@ -24,7 +24,7 @@
       "github": "https://github.com/Bonchon2023/Bonchon2023.gitHub.io"
     },
     {
-      "id": "2",
+      "id": "P02",
       "name": "SkillFrameX - Online Learning Platform",
       "description": "SkillFrameX is a modern online learning platform developed with Next.js (App Router) and TypeScript. The project focuses on providing a seamless user experience for browsing courses, reading blogs, and tracking learning progress. It features a responsive design and efficient state management to handle dynamic content.",
        "features": [
@@ -47,7 +47,7 @@
   "github": "https://github.com/Bonchon2023/SkillFrameX.gitHub.io"
     },
       {
-        "id": "3",
+        "id": "P03",
         "name": "DevPortfolio - Personal Developer Portfolio",
         "description": "A modern, highly responsive personal developer portfolio built to showcase professional projects, skills, and experience. Engineered with the latest web technologies including Next.js 16, React 19, and Tailwind CSS v4, offering a seamless user experience, optimal performance, and clean UI design.",
         "features": [
@@ -70,6 +70,29 @@
         "link": "https://dev-portfolio-smoky-ten.vercel.app/",
         "github": "https://github.com/Bonchon2023/DevPortfolio"
       }
+  ],
+  "miniproject": [
+    {
+      "id": "M01",
+      "name": "Drinking Water Calculator",
+      "description": "A lightweight, interactive web application built with React, Vite, and TypeScript that calculates a user's recommended daily water intake based on their body weight. The application provides real-time calculations and dynamically formats the output for a seamless user experience.",
+      "features": [
+        "Real-time Calculation: Implemented dynamic state management using React's `useState` hook to instantly calculate and update the recommended water intake as the user inputs their weight.",
+        "Data Formatting: Utilized JavaScript's `toLocaleString` and `toFixed` methods to cleanly format the calculated results into easily readable metrics (milliliters and liters).",
+        "Modern Build Tooling: Developed using Vite for an ultra-fast Hot Module Replacement (HMR) development experience and highly optimized production builds.",
+        "Type Safety & Code Quality: Leveraged TypeScript for strict type checking and integrated ESLint for robust code maintainability and error prevention."
+      ],
+      "role": "Frontend Developer",
+      "year": "Feb 2026",
+      "cover": "my-portfolio/data/image/drinkwater/drinkwater1.webp",
+      "tag": [ "React", "TypeScript", "Vite"],
+      "image": [
+        "my-portfolio/data/image/drinkwater/drinkwater1.webp",
+        "my-portfolio/data/image/drinkwater/drinkwater2.webp"
+      ],
+      "link": "https://drinking-water-calculator.vercel.app/",
+      "github": "https://github.com/Bonchon2023/drinking-water-calculator"
+    }
   ]
 }
 
