@@ -72,6 +72,37 @@
         ],
         "link": "https://dev-portfolio-smoky-ten.vercel.app/",
         "github": "https://github.com/Bonchon2023/DevPortfolio"
+      },
+      {
+        "id": "5",
+        "name": "SALTY v2 - E-commerce (Nuxt Edition)",
+        "description": "An experimental rebuild of my very first project, SALTY. This version migrates the original pure HTML, CSS, and Vanilla JavaScript codebase into a modern, component-based architecture using Vue 3 and Nuxt.js. It features minor UI/UX design refinements while maintaining the core e-commerce functionality.",
+        "features": [
+          "Framework Migration: Successfully refactored a vanilla web project into a robust, scalable application using Vue 3 and Nuxt.js, taking advantage of modern frontend tooling.",
+          "Composable State Management: Implemented custom Vue Composables (`useCart`, `useProducts`) to efficiently handle global state, such as shopping cart logic and dynamic product data.",
+          "Modern Routing & Layouts: Leveraged Nuxt's intuitive file-based routing system (`pages/`) and reusable layouts (`layouts/default.vue`) to create a seamless Single Page Application (SPA) experience.",
+          "Type Safety: Integrated TypeScript to ensure code reliability, better maintainability, and improved developer experience across components and logic.",
+          "UI/UX Refinements: Enhanced the original design with improved CSS structuring, responsive components, and smoother user interactions."
+        ],
+        "role": "Frontend Developer",
+        "year": "Dec 2025 - Feb 2026",
+        "cover": "my-portfolio/data/image/saltyv2/sv2_1.webp",
+        "tag": [
+          "Nuxt.js",
+          "Vue.js",
+          "TypeScript",
+          "CSS"
+        ],
+        "image": [
+          "my-portfolio/data/image/saltyv2/sv2_1.webp",
+          "my-portfolio/data/image/saltyv2/sv2_2.webp",
+          "my-portfolio/data/image/saltyv2/sv2_3.webp",
+          "my-portfolio/data/image/saltyv2/sv2_4.webp",
+          "my-portfolio/data/image/saltyv2/sv2_5.webp",
+          "my-portfolio/data/image/saltyv2/sv2_6.webp"
+        ],
+        "link": "https://[your-live-link-here].vercel.app",
+        "github": "https://github.com/Bonchon2023/salty-webapp"
       }
   ],
   "miniproject": [
