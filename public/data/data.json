@@ -14,12 +14,17 @@
       "role": "Frontend Developer",
       "year": "Oct 2025 - Dec 2025",
       "cover": "my-portfolio/data/image/salty/salty1.webp",
-      "tag": ["HTML", "CSS", "JavaScript"],
-      "image":[
+      "tag": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "image": [
         "my-portfolio/data/image/salty/salty1.webp",
         "my-portfolio/data/image/salty/salty2.webp",
         "my-portfolio/data/image/salty/salty3.webp",
-        "my-portfolio/data/image/salty/salty4.webp"],
+        "my-portfolio/data/image/salty/salty4.webp"
+      ],
       "link": "https://bonchon2023.github.io/",
       "github": "https://github.com/Bonchon2023/Bonchon2023.gitHub.io"
     },
@@ -27,27 +32,32 @@
       "id": "P02",
       "name": "SkillFrameX - Online Learning Platform",
       "description": "SkillFrameX is a modern online learning platform developed with Next.js (App Router) and TypeScript. The project focuses on providing a seamless user experience for browsing courses, reading blogs, and tracking learning progress. It features a responsive design and efficient state management to handle dynamic content.",
-       "features": [
-    "Dynamic Course Filtering & Search: Implemented a robust filtering system using `useSearchParams` to handle search queries and category selection, allowing users to filter courses by name, description, or category with shareable URLs.",
-    "Interactive Hero Slider: Built a custom carousel component with auto-sliding capabilities, manual navigation controls, and smooth CSS transitions to highlight featured courses.",
-    "Learning Progress Tracking: Integrated a custom hook (`useProgress`) to manage user enrollments and calculate real-time course completion percentages based on finished lessons.",
-    "Responsive Navigation: Designed a sticky navigation bar with a glassmorphism effect, featuring a real-time search input and a mobile-responsive menu that adapts to different screen sizes.",
-    "Asynchronous Data Loading: Utilized `Promise.all` to fetch course and category data concurrently, optimizing the initial page load performance."
-  ],
-  "role": "Frontend Developer",
-  "year": "Jan 2026 - Feb 2026",
-  "cover": "my-portfolio/data/image/skillframex/skillframex1.webp",
-  "tag": ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-  "image": [
-    "my-portfolio/data/image/skillframex/skillframex1.webp",
-    "my-portfolio/data/image/skillframex/skillframex2.webp",
-    "my-portfolio/data/image/skillframex/skillframex3.webp",
-    "my-portfolio/data/image/skillframex/skillframex4.webp",
-    "my-portfolio/data/image/skillframex/skillframex5.webp",
-    "my-portfolio/data/image/skillframex/skillframex6.webp"
-  ],
-  "link": "https://skill-frame-x-git-hub-io.vercel.app",
-  "github": "https://github.com/Bonchon2023/SkillFrameX.gitHub.io"
+      "features": [
+        "Dynamic Course Filtering & Search: Implemented a robust filtering system using `useSearchParams` to handle search queries and category selection, allowing users to filter courses by name, description, or category with shareable URLs.",
+        "Interactive Hero Slider: Built a custom carousel component with auto-sliding capabilities, manual navigation controls, and smooth CSS transitions to highlight featured courses.",
+        "Learning Progress Tracking: Integrated a custom hook (`useProgress`) to manage user enrollments and calculate real-time course completion percentages based on finished lessons.",
+        "Responsive Navigation: Designed a sticky navigation bar with a glassmorphism effect, featuring a real-time search input and a mobile-responsive menu that adapts to different screen sizes.",
+        "Asynchronous Data Loading: Utilized `Promise.all` to fetch course and category data concurrently, optimizing the initial page load performance."
+      ],
+      "role": "Frontend Developer",
+      "year": "Jan 2026 - Feb 2026",
+      "cover": "my-portfolio/data/image/skillframex/skillframex1.webp",
+      "tag": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "React"
+      ],
+      "image": [
+        "my-portfolio/data/image/skillframex/skillframex1.webp",
+        "my-portfolio/data/image/skillframex/skillframex2.webp",
+        "my-portfolio/data/image/skillframex/skillframex3.webp",
+        "my-portfolio/data/image/skillframex/skillframex4.webp",
+        "my-portfolio/data/image/skillframex/skillframex5.webp",
+        "my-portfolio/data/image/skillframex/skillframex6.webp"
+      ],
+      "link": "https://skill-frame-x-git-hub-io.vercel.app",
+      "github": "https://github.com/Bonchon2023/SkillFrameX.gitHub.io"
     },
       {
         "id": "P03",
@@ -74,7 +84,7 @@
         "github": "https://github.com/Bonchon2023/DevPortfolio"
       },
       {
-        "id": "5",
+        "id": "PO4",
         "name": "SALTY v2 - E-commerce (Nuxt Edition)",
         "description": "An experimental rebuild of my very first project, SALTY. This version migrates the original pure HTML, CSS, and Vanilla JavaScript codebase into a modern, component-based architecture using Vue 3 and Nuxt.js. It features minor UI/UX design refinements while maintaining the core e-commerce functionality.",
         "features": [
@@ -101,7 +111,7 @@
           "my-portfolio/data/image/saltyv2/sv2_5.webp",
           "my-portfolio/data/image/saltyv2/sv2_6.webp"
         ],
-        "link": "https://[your-live-link-here].vercel.app",
+        "link": "https://salty-webapp.vercel.app/",
         "github": "https://github.com/Bonchon2023/salty-webapp"
       }
   ],
@@ -119,14 +129,47 @@
       "role": "Frontend Developer",
       "year": "Feb 2026",
       "cover": "my-portfolio/data/image/drinkwater/drinkwater1.webp",
-      "tag": [ "React", "TypeScript", "Vite"],
+      "tag": [
+        "React",
+        "TypeScript",
+        "Vite"
+      ],
       "image": [
         "my-portfolio/data/image/drinkwater/drinkwater1.webp",
         "my-portfolio/data/image/drinkwater/drinkwater2.webp"
       ],
       "link": "https://drinking-water-calculator.vercel.app/",
       "github": "https://github.com/Bonchon2023/drinking-water-calculator"
+    },
+    {
+      "id": "M02",
+      "name": "WeatherDash - Interactive Weather Dashboard",
+      "description": "A comprehensive weather dashboard application built with Nuxt 3 and Tailwind CSS. It provides real-time weather updates, detailed hourly and daily forecasts, and features an interactive map to visualize precipitation, clouds, and temperature layers.",
+      "features": [
+        "Real-Time Weather Data: Integrated OpenWeatherMap API to fetch and display accurate current weather conditions, including temperature, humidity, wind speed, and UV index.",
+        "Interactive Weather Maps: Implemented Leaflet.js to render dynamic, interactive maps with toggleable layers for rain, clouds, temperature, and wind speed.",
+        "Dynamic Location Search: Built a custom search functionality leveraging OpenWeatherMap's Geocoding API to easily find and switch between different cities globally.",
+        "Server-Side API Proxy: Utilized Nuxt 3's Nitro server engine (`/server/api`) to securely proxy external API requests, keeping API keys hidden from the client and preventing CORS issues.",
+        "Responsive UI Components: Designed an intuitive, mobile-first interface using Tailwind CSS, featuring smooth horizontal scroll cards for hourly forecasts and clean list views for daily predictions."
+      ],
+      "role": "Frontend Developer",
+      "year": "Feb 2026",
+      "cover": "my-portfolio/data/image/weatherdash/weatherdash1.webp",
+      "tag": [
+        "Nuxt.js",
+        "Vue",
+        "Tailwind CSS",
+        "TypeScript",
+        "Leaflet"
+      ],
+      "image": [
+        "my-portfolio/data/image/weatherdash/weatherdash1.webp",
+        "my-portfolio/data/image/weatherdash/weatherdash2.webp",
+        "my-portfolio/data/image/weatherdash/weatherdash3.webp",
+        "my-portfolio/data/image/weatherdash/weatherdash4.webp"
+      ],
+      "link": "https://weather-dash-gamma.vercel.app/",
+      "github": "https://github.com/Bonchon2023/weatherdash"
     }
   ]
 }
-
